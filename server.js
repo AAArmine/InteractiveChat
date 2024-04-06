@@ -11,9 +11,10 @@ const server = http.createServer(app)
 const io = socket(server);
 
 io.on('connection', (socket)=>{
-    socket.emit('message', 'hello from server')
+   socket.broadcast.emit('message', 'A user connected!')
+   socket.emit("message",'Hello User!')
  socket.on('disconnect', ()=>{
-    console.log('user disconnected');
+    io.emit("message", "A user disconnected!")
  })
 
 })
@@ -21,5 +22,3 @@ io.on('connection', (socket)=>{
 server.listen(3000, () => {
   console.log("Server listens to port 3000");
 });
-
-// kfnvsklnvdsknvk
