@@ -16,7 +16,7 @@
             <img class="chat-icon" src="icons/eyes.gif" alt="chatbox" />
           </div>
           Ba-CHAT-a
-          <div>Register</div>
+          <div>LOGIN</div>
         </h1>
       </header>
       <main class="login-main">
@@ -31,17 +31,18 @@
               required
             />
           </div>
-		  <div class="form-control">
-            <label for="password">Password</label>
-            <input
-              type="text"
-              name="password"
-              id="password"
-              placeholder="Enter password..."
-              required
-            />
+          <div class="form-control">
+            <label for="room">Room</label>
+            <select name="room" id="room">
+              <option value="Music">Music</option>
+              <option value="Books">Books</option>
+              <option value="Movies">Movies</option>
+              <option value="Games">Games</option>
+              <option value="Sport">Sport</option>
+              <option value="Art">Art</option>
+            </select>
           </div>
-          <button type="submit" class="btn">SIGN UP</button>
+          <button type="submit" class="btn">LOGIN</button>
         </form>
         <img class="chat-gif" src="icons/animated.gif" alt="chatbox" />
       </main>
